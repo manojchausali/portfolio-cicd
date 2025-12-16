@@ -17,4 +17,4 @@ phases:
 
   post_build:
     commands:
-      - aws s3 sync dist/ s3://secure-aws-portfolio-manoj --delete
+      - aws s3 sync dist/ s3://aws-manoj-portfolio-cicd --delete
