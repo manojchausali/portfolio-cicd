@@ -7,6 +7,14 @@ phases:
     commands:
       - npm install
 
+  pre_build:
+    commands:
+      - npm audit --audit-level=high || true
+
   build:
     commands:
       - npm run build
+
+  post_build:
+    commands:
+      - aws s3 sync dist/ s3://secure-aws-portfolio-manoj --delete
