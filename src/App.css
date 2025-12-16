@@ -1,0 +1,127 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* src/App.css */
+
+/* 1. Container/Body Styling (Dark Theme) */
+:root {
+  /* Define variables for easy maintenance */
+  --primary-color: #4CAF50; /* Green accent color */
+  --text-color: #f0f0f0;
+  --bg-color: #1c1c1c;
+  --bg-item-color: #2a2a2a;
+}
+
+.container {
+  max-width: 800px; /* Limits width for better readability */
+  margin: 40px auto; /* Centers the container on the page */
+  padding: 40px 50px;
+  font-family: 'Roboto', Arial, sans-serif; /* Modern, readable font */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 2. Header (Name/Title) */
+.header-name {
+  font-size: 3em;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-weight: 900;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.header-tagline {
+  font-size: 1.2em;
+  color: #bbb;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+/* 3. Section Headers */
+.section-header {
+  font-size: 1.8em;
+  color: var(--text-color);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-left: 5px solid var(--primary-color); /* Vertical accent line */
+  padding-left: 15px;
+}
+
+/* 4. Content (Paragraphs and Lists) */
+.paragraph {
+  line-height: 1.6; /* Improves readability */
+  font-size: 1em;
+  color: #ccc;
+}
+
+.project-tagline {
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+.list {
+  list-style-type: none; /* Removes default list bullets */
+  padding: 0;
+}
+
+.list-item {
+  background-color: var(--bg-item-color);
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border-left: 3px solid var(--primary-color);
+  font-size: 1.05em;
+}
+
+.contact-link {
+  color: var(--primary-color);
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: lighten(var(--primary-color), 10%); /* Brightens color on hover (requires CSS preprocessor or JS) */
+  text-decoration: underline;
+}
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
