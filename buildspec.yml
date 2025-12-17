@@ -21,4 +21,4 @@ phases:
       - aws cloudfront create-invalidation --distribution-id E2LI2XLSP6KDYE --paths "/*"
 
   artifacts:
-  type: NO_ARTIFACTS
+    type: NO_ARTIFACTS
